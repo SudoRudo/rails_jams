@@ -12,5 +12,5 @@ patch '/artists/:id', to: 'artist#update'
 
 # resources :artists, only: destroy
 
-delete 'artists/:id', to: 'artists#destroy', as: 'destroy_artist'
+get 'artists/:id/destroy', to: 'artists#destroy', as: 'destroy_artist'
 end
